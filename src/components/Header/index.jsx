@@ -1,8 +1,8 @@
 import React from "react";
-import ThemeContext from "../context/Context";
+import ThemeContext from "../../context/Context";
 import { FiSun } from "react-icons/fi";
 import { FiStar } from "react-icons/fi";
-import "../Header.css";
+import "./Header.css";
 function Header() {
     const { theme, setTheme } = React.useContext(ThemeContext);
     const handleClick = () => {

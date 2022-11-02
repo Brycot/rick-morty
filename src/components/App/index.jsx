@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import Characters from "./components/Characters";
-import Header from "./components/Header";
-import ThemeContext from "./context/Context";
+import Characters from "../Characters";
+import Header from "../Header";
+import ThemeContext from "../../context/Context";
 import "./App.css";
 
 function App() {

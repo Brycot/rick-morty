@@ -1,4 +1,4 @@
-import "../Character.css";
+import "./Character.css";
 
 function Character({ character, onFavorite }) {
     return (

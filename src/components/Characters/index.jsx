@@ -1,15 +1,9 @@
-import {
-    useState,
-    useReducer,
-    useMemo,
-    useRef,
-    useCallback,
-} from "react";
+import { useState, useReducer, useMemo, useRef, useCallback } from "react";
 
-import useCharacters from "../hooks/useCharacters";
-import Character from "./Character";
-import "../Characters.css";
-import Search from "./Search";
+import useCharacters from "../../hooks/useCharacters";
+import Character from "../Character";
+import "./Characters.css";
+import Search from "../Search";
 
 const API = "https://rickandmortyapi.com/api/character";
 
@@ -40,11 +34,9 @@ const Characters = () => {
         dispatch({ type: "ADD_TO_FAVORITE", payload: favorite });
     };
 
-
     const handleSearch = useCallback(() => {
         setsearch(searchInput.current.value);
     }, []);
-
 
     const filteredUsers = useMemo(
         () =>
