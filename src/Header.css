@@ -1,0 +1,31 @@
+.Header {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.h1-light {
+    color: black;
+    transition: all 1s ease;
+}
+.h1-dark {
+    color: white;
+    transition: all 1s ease;
+}
+.button-dark {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: rgb(220, 245, 0);
+    transition: all 1s ease;
+}
+.button-light {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: rgb(8, 8, 134);
+    transition: all 1s ease;
+}
