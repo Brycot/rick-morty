@@ -35,6 +35,8 @@
 .character__info p {
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 14px;
+    color: rgb(184, 181, 181);
 }
 .character__info p:nth-child(2) {
     grid-column: 1 / 2;
@@ -74,6 +76,7 @@
     background-color: #2cb67d;
 }
 .character__info span {
+    font-size: 16px;
     font-weight: 600;
     color: #2cb67d;
 }

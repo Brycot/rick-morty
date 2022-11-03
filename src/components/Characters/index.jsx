@@ -35,7 +35,6 @@ const Characters = () => {
         
         // const isInclude = favorites.favorites.find((character) => character.id === favorite.id)
         const isInclude = favorites.favorites.includes(favorite)
-        console.log(isInclude);
         if (!isInclude) {
             dispatch({ type: "ADD_TO_FAVORITE", payload: favorite });
         } else {
