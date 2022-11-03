@@ -10,6 +10,7 @@ function App() {
         <div className={`${theme ? "App-dark" : "App"}`}>
             <Header />
             <Characters />
+            <footer>Coded With 💙 By Bryan(Brycot)</footer>
         </div>
     );
 }
