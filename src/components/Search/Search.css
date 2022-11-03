@@ -1,0 +1,8 @@
+.InputSearch-Container {
+    width: 300px;
+}
+
+.InputSearch-Container input {
+    width: 100%;
+    height: 40px;
+}

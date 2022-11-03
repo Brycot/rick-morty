@@ -2,7 +2,7 @@ import React from "react";
 import './Search.css'
 function Search({ search, searchInput, handleSearch }) {
     return (
-        <section>
+        <section className="InputSearch-Container">
             <input
                 type="text"
                 ref={searchInput}

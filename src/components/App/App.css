@@ -1,17 +1,19 @@
 .App {
-  width: 100%;
-  background-color: white;
-  text-align: center;
-  transition: all 1s ease;
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    text-align: center;
+    transition: all 0.5s ease;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 .App-dark {
-  width: 100%;
-  background-color: #101014;
-  transition: all 1s ease;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #101014;
+    transition: all 0.5s ease;
 }

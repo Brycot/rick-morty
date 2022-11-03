@@ -47,7 +47,7 @@ const Characters = () => {
     );
 
     return (
-        <div className="Characters">
+        <main className="Characters">
             <Search
                 search={search}
                 searchInput={searchInput}
@@ -72,7 +72,7 @@ const Characters = () => {
                     />
                 ))}
             </section>
-        </div>
+        </main>
     );
 };
 

@@ -9,10 +9,10 @@ function Header() {
         setTheme(!theme);
     };
     return (
-        <div className="Header">
-            <h1 className={`${theme ? "h1-dark" : "h1-light"}`}>
-                Rick&Morty
-            </h1>
+        <header className="Header">
+            <h1 className={`${theme ? "h1-dark" : "h1-light"}`}>Rick&Morty</h1>
+            <p className={`${theme ? "h1-dark" : "h1-light"}`}>2019</p>
+            <p className={`${theme ? "h1-dark" : "h1-light"}`}>5 temporadas</p>
             <button
                 className={`${theme ? "button-dark" : "button-light"}`}
                 type="button"
@@ -20,7 +20,8 @@ function Header() {
             >
                 {theme ? <FiSun /> : <FiStar />}
             </button>
-        </div>
+            <div className={theme ? "shadow-dark" : "shadow-light"}></div>
+        </header>
     );
 }
 
