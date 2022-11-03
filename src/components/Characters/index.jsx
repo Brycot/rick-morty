@@ -45,7 +45,7 @@ const Characters = () => {
             }),
         [characters, search]
     );
-
+            console.log(filteredUsers);
     return (
         <main className="Characters">
             <Search
@@ -68,7 +68,7 @@ const Characters = () => {
                     <Character
                         key={character.id}
                         character={character}
-                        onFavorite={handleFavorite}
+                        onFavorite={() => {handleFavorite(character.id)}}
                     />
                 ))}
             </section>
