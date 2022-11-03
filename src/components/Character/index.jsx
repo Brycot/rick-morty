@@ -1,14 +1,18 @@
+import { useContext } from "react";
+import ThemeContext from "../../context/Context";
 import "./Character.css";
 
 function Character({ character, onFavorite, favorites }) {
+    const { theme } = useContext(ThemeContext);
     const isLive = character.status === "Alive";
-    const isFavorite = favorites.includes(character)
+    const isFavorite = favorites.includes(character);
+
     return (
         <div className="Character__container">
             <figure>
                 <img src={character.image} alt="" />
             </figure>
-            <div className="character__info">
+            <div className={theme ? 'character__info' : 'character__info-light'}>
                 <h3>{character.name}</h3>
                 <p>
                     <span>Gender:</span> {character.gender}
