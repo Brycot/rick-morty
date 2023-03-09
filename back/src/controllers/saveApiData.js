@@ -37,20 +37,6 @@ const saveApiData = async () => {
     const characters = await getApiData();
 
     try {
-        // characters.map(async (ch) => {
-        //     const [user, created] = await Character.findOrCreate({
-        //         where: { id: ch.id },
-        //         defaults: {
-        //             id: ch.id,
-        //             name: ch.name,
-        //             species: ch.species,
-        //             status: ch.status,
-        //             origin: ch.origin,
-        //             gender: ch.gender,
-        //             image: ch.image,
-        //         },
-        //     });
-        // });
         await Character.bulkCreate(characters);
     } catch (error) {
         console.log({ error: error.message });
